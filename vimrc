@@ -105,20 +105,20 @@ set sessionoptions=resize,winpos,winsize,buffers,tabpages,folds,curdir,help
 "autocmd BufNewFile * silent! 0r $VIMHOME/templates/%:e.tpl  
   
 "Change zen coding plugin expansion key to shift + e  
-let g:user_zen_expandabbr_key = '<C-e>'  
+let g:user_zen_expandabbr_key = '<C-e>' 
   
 "Faster shortcut for commenting. Requires T-Comment plugin  
 "map <leader>c <c-_><c-_>  
   
 "Saves time; maps the spacebar to colon  
-nmap <space> :  
-  
+nmap <space> : 
+
 "Automatically change current directory to that of the file in the buffer  
 autocmd BufEnter * cd %:p:h  
-  
+ 
 "Map code completion to , + tab  
 imap <leader><tab> <C-x><C-o>  
-  
+ 
 " More useful command-line completion  
 set wildmenu  
   
@@ -161,19 +161,6 @@ nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j  
 nmap <C-k> <C-w>k  
 nmap <C-l> <C-w>l  
-  
-"------------------------"  
-"NERDTREE PLUGIN SETTINGS  
-"------------------------"  
-"Shortcut for NERDTreeToggle  
-nmap <leader>nt :NERDTreeToggle <CR>  
-  
-"Show hidden files in NerdTree  
-let NERDTreeShowHidden=1  
-  
-"autopen NERDTree and focus cursor in new document  
-"autocmd VimEnter * NERDTree  
-"autocmd VimEnter * wincmd p  
   
 "Helpeful abbreviations  
 iab lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  
