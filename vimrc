@@ -155,7 +155,7 @@ if has("autocmd")
   autocmd bufwritepost .vimrc source ~/.vimrc  
  augroup END  
 endif  
-  
+
 " easier window navigation  
 nmap <C-h> <C-w>h  
 nmap <C-j> <C-w>j  
